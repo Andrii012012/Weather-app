@@ -1,0 +1,48 @@
+/* 920 */
+
+@media (max-width: 57.5em) {
+    .weather-now__image {
+        max-width: 120px;
+    }
+
+    .weather-now__state {
+        font-size: 1.25rem;
+    }
+}
+
+/* 480 */
+
+@media (max-width: 30em) {
+    .weather-now__image {
+        max-width: 100px;
+    }
+
+    .weather-now__state {
+        font-size: 1.125rem;
+    }
+
+    .weather-now__celsius {
+        font-size: 2.625rem;
+    }
+
+    .weather-now__celsius span {
+        font-size: 1.5rem;
+        margin-left: 0.625rem;
+        display: inline-block;
+        transform: translate(20%, -50%);
+    }
+
+    .weather-now__celsius span::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 380px) {
+    .weather-now__image {
+        max-width: 80px;
+    }
+}

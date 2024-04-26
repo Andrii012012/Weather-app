@@ -1,0 +1,21 @@
+
+/* 920 */
+
+@media (max-width: 57.5em) {
+    .weather-forecast__temp {
+      font-size: 1.25rem;
+    }
+}
+
+/* 480 */
+
+@media (max-width: 30em) {
+    .weather-forecast__temp {
+        font-size: 1.125rem;
+    }
+    .weather-forecast__temp::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+    }
+}

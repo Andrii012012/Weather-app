@@ -1,0 +1,14 @@
+/* 640 */
+
+@media (max-width: 40em) {
+    .weather-after__body {
+        flex-direction: column;
+    }
+
+    .weather-after__air {
+        margin: 0 0 1.5625rem 0;
+    }
+    .weather-after__content {
+        padding: 3.125rem 1.5625rem 1.5625rem 1.5625rem;
+    }
+}

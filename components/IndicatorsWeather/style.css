@@ -1,0 +1,55 @@
+.indicator-weather {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+}
+
+.indicator-weather__item {
+    display: inline-flex;
+    padding: 1.25rem;
+}
+
+.indicator-weather__item h4 {
+    margin-bottom: 0.9375rem;
+}
+
+.indicator-weather__body-info {
+    margin-right: 0.9375rem;
+}
+
+.indicator-weather__item p {
+    align-self: flex-end;
+}
+
+.indicator-weather__image {
+    width: 35px;
+    height: 35px;
+}
+
+.indicator-weather__info {
+    position: relative;
+    padding-right: 0.75rem;
+}
+
+.indicator-weather__info::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+
+.indicator-weather__info span::after {
+    content: "C";
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    transform: translate(50%, -10%);
+}

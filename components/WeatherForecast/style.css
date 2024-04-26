@@ -1,0 +1,61 @@
+.weather-forecast {
+    padding: 0;
+}
+
+.weather-forecast__item {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.3125rem;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+}
+
+.weather-forecast__item:hover {
+    background-color: #253147;
+}
+
+.weather-forecast__item:last-child {
+    margin-bottom: 0;
+}
+
+.weather-forecast__body-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-forecast__img {
+    margin-right: 0.625rem;
+}
+
+.weather-forecast__temp {
+    font-size: 1.125rem;
+    position: relative;
+    margin-right: 0.9375rem;
+}
+
+.weather-forecast__temp::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
+
+.weather-forecast__body-date {
+    display: flex;
+}
+
+.weather-forecast__body-date>p {
+    margin-right: 0.625rem;
+}
+
+.weather-forecast__body-date>span {
+    margin-right: 1.5625rem;
+}

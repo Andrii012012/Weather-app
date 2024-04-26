@@ -1,0 +1,45 @@
+.weather-after__content {
+    width: 100%;
+    min-height: 31.25rem;
+    background-color: #39b2e1;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.125rem;
+}
+
+.weather-after__wrapper {
+    max-width: 50rem;
+}
+
+.weather-after__list-extra-info {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+    width: 100%;
+    margin-bottom: 1.5625rem;
+}
+
+.weather-after__body {
+    display: flex;
+    margin-bottom: 1.5625rem;
+    width: 100%;
+}
+
+.weather-after__air {
+    margin-right: 1.5625rem;
+    flex: 1 1 50%;
+}
+
+.weather-after__duration {
+    flex: 1 1 50%;
+}
+
+.weather-after__list-weather-today {
+    display: flex;
+    color: #fff;
+    gap: 0.625rem;
+}

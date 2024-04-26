@@ -1,0 +1,39 @@
+/* weather-today */
+
+.weather-today {
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.weather-today__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-today__img {
+    margin: 0.3125rem 0;
+    max-width: 60px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.weather-today__celsius {
+    position: relative;
+}
+
+.weather-today__celsius::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}

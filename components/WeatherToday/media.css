@@ -1,0 +1,13 @@
+/* 480 */
+
+@media (max-width: 30em) {
+    .weather-today {
+        justify-content: center;
+    }
+
+    .weather-today {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <img class="header__logo" src="./image/logo.svg" alt="">
+                    <form class="form-seach">
+                        <div class="form-seach__wrapper">
+                            <div class="form-seach__body-input">
+                                <input type="text" placeholder="Seach..." class="form-seach__input" name="seach" />
+                            </div>
+                            <ul class="form-seach__list"></ul>
+                        </div>
+                    </form>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <div class="header__body">
+                        <div class="header__container-btn">
+                            <button class="header__btn">Поточна локація</button>
+                            <div class="theme">
+                                <div class="theme__wrapper">
+                                    <div class="theme__indecation">
+                                        <div class="theme__img">
+                                            <img src='./image/theme-icon-sun.svg' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container body-weather">
+                <aside class="aside-weather">
+                    <section class="weather-now section-info">
+                        <h2 class="title">Зараз</h2>
+                    </section>
+                    <h2 class="title-section">Прогноз за 5 днів</h2>
+                    <section class="weather-forecast section-info">
+                        <ul class='weather-forecast'>
+
+                        </ul>
+                    </section>
+                </aside>
+                <section class="weather-today-info">
+                    <section class="weather-extra-info section-info">
+                        <h2 class="title">сьогоднішнього дня</h2>
+                        <div class="weather-extra-info__wrapper">
+                            <div class="weather-air-quality section-block">
+                                <h2 class="title-section weather-air-quality__title">Якость повітря</h2>
+                            </div>
+                            <div class="weather-duration section-block">
+                                <h2 class="title-section weather-duration__title">Схід & Захід</h2>
+                            </div>
+                        </div>
+                        <div class="weather-different">
+                            <ul class="weather-different__list"></ul>
+                        </div>
+                    </section>
+                    <h2 class="title-section">сьогодні</h2>
+                    <section class="time-weather section-info">
+                    </section>
+                </section>
+            </div>
+        </main>
+        <section class="weather-after-info popup">
+            <div class="weather-after-info__container popup-container">
+                <div class="weather-after__content popup-content">
+                    <div class="popup-close"><span></span></div>
+                    <div class="weather-after__wrapper">
+                        <div class="weather-after__body">
+                            <div class="weather-after__air section-block">
+                                <h2 class="title-section weather-air-quality__title">Якость повітря</h2>
+                            </div>
+                        </div>
+                        <ul class="weather-after__list-extra-info"></ul>
+                        <div class="weather-today-body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/suncalc3@2.0.5/suncalc.min.js"></script>
+        
+    <!-- Header -->
+    <link rel="stylesheet" href="./components/Header/style.css">
+    <link rel="stylesheet" href="./components/Header/media.css">
+    <script type="module" src="./components/Header/header.js"></script>
+
+    <!-- WeatherNow -->
+    <link rel="stylesheet" href="./components/WeatherNow/style.css">
+    <link rel="stylesheet" href="./components/WeatherNow/media.css">
+    <script type='module' src="./components/WeatherNow/WeatherNow.js"></script>
+
+    <!-- ExtraInfoAir -->
+    <link rel="stylesheet" href="./components/ExtraInfoAir/style.css">
+    <link rel="stylesheet" href="./components/ExtraInfoAir/media.css">
+    <script type='module' src="./components/ExtraInfoAir/ExtraInfoAir.js"></script>
+
+    <!-- InfoSunriseSunset -->
+    <link rel="stylesheet" href="./components/InfoSunriseSunset/style.css">
+    <link rel="stylesheet" href="./components/InfoSunriseSunset/media.css">
+    <script type='module' src="./components/InfoSunriseSunset/InfoSunriseSunset.js"></script>
+
+    <!-- DifferentIndicatorsWeather -->
+    <link rel="stylesheet" href="./components/IndicatorsWeather/style.css">
+    <link rel="stylesheet" href="./components/IndicatorsWeather/media.css">
+    <script type='module' src="./components/IndicatorsWeather/IndicatorsWeather.js"></script>
+
+    <!-- WeatherForecast -->
+    <link rel="stylesheet" href="./components/WeatherForecast/style.css">
+    <link rel="stylesheet" href="./components/WeatherForecast/media.css">
+    <script type='module' src="./components/WeatherForecast/WeatherForecast.js"></script>
+
+    <!-- WeatherToday -->
+    <link rel="stylesheet" href="./components/WeatherToday/style.css">
+    <link rel="stylesheet" href="./components/WeatherToday/media.css">
+    <script type='module' src="./components/WeatherToday/WeatherToday.js"></script>
+
+    <!-- PopupWeather -->
+    <link rel="stylesheet" href="./components/PopupWeather/style.css">
+    <link rel="stylesheet" href="./components/PopupWeather/media.css">
+    <script type='module' src="./components/PopupWeather/PopupWeather.js"></script>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* 480 */
+
+@media (max-width: 30em) {
+    .indicator-weather__item {
+        width: 100%;
+    }
+
+    .indicator-weather__info::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 2px solid #fff;
+    }
+
+    .indicator-weather__info span::after {
+        content: "C";
+        font-size: 1.125rem;
+        transform: translate(50%, -10%);
+    }
+}

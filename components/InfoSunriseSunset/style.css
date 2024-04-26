@@ -1,0 +1,31 @@
+.info-sunrise-sunset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    gap: 0.9375rem;
+}
+
+.info-sunrise-sunset__item {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5625rem;
+}
+
+.info-sunrise-sunset__item:last-child {
+    margin-right: 0;
+}
+
+.info-sunrise-sunset__item img {
+    margin-right: 0.625rem;
+    max-width: 40px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+}
+
+.info-sunrise-sunset__item h4 {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+}
